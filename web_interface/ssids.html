@@ -1,0 +1,118 @@
+<!--JunidoKai & MinhAnhs🐰--!>
+<!Doctype html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=0.8, minimal-ui">
+	<meta name="theme-color" content="#36393E">
+
+	<meta name="description" content="ESP8266 Deauther">
+	<title>𝙈𝙞𝙣𝙝𝘼𝙣𝙝𝙨🐰</title>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="js/site.js"></script>
+	<script src="js/ssids.js"></script>
+</head>
+
+<body onload="loadLang()">
+	<nav>
+		<ul class="menu">
+			<li><a href="scan.html" data-translate="scan">𝙎𝙘𝙖𝙣</a></li>
+			<li><a href="ssids.html" data-translate="ssids">𝙎𝙎𝙄𝘿𝙨</a></li>
+			<li><a href="attack.html" data-translate="attacks">𝘼𝙩𝙩𝙖𝙘𝙠</a></li>
+			<li><a href="settings.html" data-translate="settings">𝙎𝙚𝙩𝙩𝙞𝙣𝙜𝙨</a></li>
+		</ul>
+	</nav>
+
+	<div id="status"></div>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<h1 class="header" data-translate="ssids">𝙎𝙎𝙄𝘿𝙨</h1>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-6">
+				<label for="ssid">𝙎𝙎𝙄𝘿</label>
+			</div>
+			<div class="col-6">
+				<input type="text" id="ssid" name="ssid" placeholder="SSID" maxlength="32">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-6">
+				<label>𝙒𝙋𝘼2</label>
+			</div>
+			<div class="col-6">
+				<label class='checkBoxContainer'><input id="enc" type='checkbox'><span class='checkmark'></span></label>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-6">
+				<label data-translate="number">𝙉𝙪𝙢𝙗𝙚𝙧</label>
+			</div>
+			<div class="col-6">
+				<input id="ssidNum" type="number" value="1" max="60" min="1">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-6">
+				<label data-translate="overwrite">𝙊𝙫𝙚𝙧𝙬𝙧𝙞𝙩𝙚</label>
+			</div>
+			<div class="col-6">
+				<label class='checkBoxContainer'><input id="overwrite" type='checkbox' checked><span
+						class='checkmark'></span></label>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12">
+				<button onclick="add()" data-translate="add">add</button>
+				<button onclick="addSelected()" data-translate="add_selected">clone selected APs</button>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12">
+				<button onclick="load()" class="right" data-translate="reload">Reload</button>
+				<p>
+					<span class="red" data-translate="info_span">𝙄𝙉𝙁𝙊 :</span><br>
+					<span data-translate="ssids_info">
+						➤ Danh sách 𝙎𝙎𝙄𝘿 này được sử dụng cho cuộc tấn công đèn hiệu và thăm dò.<br>
+						➤ Mỗi 𝙎𝙎𝙄𝘿 có thể có tối đa 32 ký tự.<br>
+						➤ Đừng quên nhấp vào lưu khi bạn chỉnh sửa 𝙎𝙎𝙄𝘿.<br>
+						➤ Bạn phải nhấp vào Tải lại sau khi nhân bản SSID.<br>
+					</span>
+					<span data-translate="info_disclaimer">Trong trường hợp xảy ra lỗi không mong muốn, vui lòng tải lại trang web và nhìn vào màn hình nối tiếp để gỡ lỗi thêm.</span><br>
+				</p>
+				<hr>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-6">
+				<label for="interval" data-translate="time_interval">Time Interval</label>
+			</div>
+			<div class="col-6">
+				<input id="interval" name="interval" type="number" value="10" max="600" min="1">s
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12">
+				<button onclick="enableRandom()" id="randomBtn">Enable Random Mode</button>
+				<p data-translate="random_desc">Bật chế độ ngẫu nhiên để tạo danh sách 𝙎𝙎𝙄𝘿 ngẫu nhiên trong một địa chỉ nhất định khoảng.</p>
+				<hr>
+				<table id="ssidTable"></table>
+				<button onclick="removeAll()" class="red" data-translate="remove_all">Remove All</button>
+			</div>
+		</div>
+	</div>
+	<footer>
+	       <h4>𝙩𝙙𝙪𝙣𝙜𝙭🍁 / 𝙢𝙖𝙣𝙝𝙨🐰</h4>
+		<span id="version">Version 2.6.1</span>
+		<br>
+		<br>
+		<a href="http://deauther.maltronics.com" target="_blank">Wiki</a> | <a href="info.html">Credits</a>
+	</footer>
+</body>
+
+</html>

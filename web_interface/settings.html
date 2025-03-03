@@ -1,0 +1,67 @@
+<!--JunidoKai & MinhAnhs🐰--!>
+<!Doctype html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=0.8, minimal-ui">
+	<meta name="theme-color" content="#36393E">
+
+	<meta name="description" content="ESP8266 Deauther">
+	<title>𝙈𝙞𝙣𝙝𝘼𝙣𝙝𝙨🐰</title>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="js/site.js"></script>
+	<script src="js/settings.js"></script>
+</head>
+
+<body onload="loadLang()">
+	<nav>
+		<ul class="menu">
+			<li><a href="scan.html" data-translate="scan">𝙎𝙘𝙖𝙣</a></li>
+			<li><a href="ssids.html" data-translate="ssids">𝙎𝙎𝙄𝘿𝙨</a></li>
+			<li><a href="attack.html" data-translate="attacks">𝘼𝙩𝙩𝙖𝙘𝙠</a></li>
+			<li><a href="settings.html" data-translate="settings">𝙎𝙚𝙩𝙩𝙞𝙣𝙜𝙨</a></li>
+		</ul>
+	</nav>
+
+	<div id="status"></div>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<h1 class="header" data-translate="settings">𝙎𝙚𝙩𝙩𝙞𝙣𝙜𝙨</h1>
+
+				<button
+					onclick="getFile('run?cmd=stopap');alert('Turning off access point now. Restart your Deauther to be able to connect again.')"
+					class="red" data-translate="wifi_off">WiFi off</button>
+				<button onclick="getFile('run?cmd=reset;;save settings')" class="red"
+					data-translate="reset">Reset</button>
+				<button onclick="getFile('run?cmd=reboot')" class="red right" data-translate="reboot">reboot</button>
+
+				<p>
+					<span class="red" data-translate="info_span">𝙄𝙉𝙁𝙊 :</span><br>
+					<span data-translate="settings_info">
+						➤ Một số cài đặt yêu cầu khởi động lại.<br>
+						➤ Nhấp vào lưu để đảm bảo rằng những thay đổi của bạn được áp dụng.<br>
+					</span>
+					<span data-translate="info_disclaimer">➤ Trong trường hợp xảy ra lỗi không mong muốn, vui lòng tải lại trang web và nhìn vào màn hình nối tiếp để gỡ lỗi thêm.</span><br>
+				</p>
+
+				<button onclick="save()" data-translate="save">save</button>
+				<button onclick="load()" class="right" data-translate="reload">reload</button>
+			</div>
+		</div>
+
+		<div id="settingsList"></div>
+	</div>
+	<footer>
+	       <h4>𝙩𝙙𝙪𝙣𝙜𝙭🍁 / 𝙢𝙖𝙣𝙝𝙨🐰</h4>
+		<span id="version">Version 2.6.1</span>
+		<br>
+		<br>
+		<a href="http://deauther.maltronics.com" target="_blank">Wiki</a> | <a href="info.html">Credits</a>
+	</footer>
+</body>
+
+</html>
