@@ -1,6 +1,7 @@
-# INFO
- >>> Đã được chỉnh sửa bởi JunidoKai
- >>> Vẫn giữ bản quyền của SpacehuhnTech
+# INFO 𓆏
+ ➤➤➤ Đã được chỉnh sửa bởi JunidoKai
+ ➤➤➤ Vẫn giữ bản quyền của SpacehuhnTech
+ © Copyright JunidoKai ✔
 # ESP8266 Deauther
 
 <img src='https://deauther.com/img/logo.png' alt='Deauther Logo' width='200' />
