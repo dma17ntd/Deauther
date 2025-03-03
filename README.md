@@ -1,7 +1,8 @@
 # INFO 𓆏
- ➤➤➤ Đã được chỉnh sửa bởi JunidoKai
- ➤➤➤ Vẫn giữ bản quyền của SpacehuhnTech
- © Copyright JunidoKai ✔
+  Đã được chỉnh sửa bởi JunidoKai🍁
+  © Copyright JunidoKai𓃟 
+<img src='https://giffiles.alphacoders.com/174/1744.gì'alt='Hacker Logo'width='200' />
+  Vẫn giữ bản quyền của SpacehuhnTech
 # ESP8266 Deauther
 
 <img src='https://deauther.com/img/logo.png' alt='Deauther Logo' width='200' />
