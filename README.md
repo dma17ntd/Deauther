@@ -1,3 +1,6 @@
+# INFO
+ >>> Đã được chỉnh sửa bởi JunidoKai
+ >>> Vẫn giữ bản quyền của SpacehuhnTech
 # ESP8266 Deauther
 
 <img src='https://deauther.com/img/logo.png' alt='Deauther Logo' width='200' />
@@ -18,7 +21,7 @@ Here are some quick links:
 
 ## Password
 
-The password for `pwned` is `deauther`
+The password for `MinhAnhs🐰` is `JunidoKai`
 
 ## About this Project
 
